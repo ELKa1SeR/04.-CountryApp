@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ByCapitalPageComponent {
 
+onInput(event: Event) {
+  const inputElement = event.target as HTMLInputElement;
+  const term = inputElement.value;
+  this.searchByCapital(term);
+}
+
+  searchByCapital( term: string):void {
+    console.log('Desde ByCapitalPage');
+    console.log({ term });
+  }
 }
