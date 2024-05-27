@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomePagesComponent } from './pages/home-pages/home-pages.component';
 import { AboutPageComponent } from './pages/about-page/about-page/about-page.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page/contact-page.component';
+
 
 
 
@@ -10,7 +13,9 @@ import { AboutPageComponent } from './pages/about-page/about-page/about-page.com
 @NgModule({
   declarations: [
   HomePagesComponent,
-  AboutPageComponent
+  AboutPageComponent,
+  SidebarComponent,
+  ContactPageComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +23,9 @@ import { AboutPageComponent } from './pages/about-page/about-page/about-page.com
   ],
   exports: [
     AboutPageComponent,
-    HomePagesComponent
+    ContactPageComponent,
+    HomePagesComponent,
+    SidebarComponent,
   ]
 })
 export class SharedModule { }
